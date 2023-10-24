@@ -1,17 +1,17 @@
 #include "libft.h"
 
-char    *ft_strdup(char *src)
+char    *ft_strdup(const char *str)
 {
         int             i;
         int             size;
         char    *dest;
 
         i = 0;
-        size = ft_strlen(src) + 1;
+        size = ft_strlen(str) + 1;
         dest = malloc(sizeof(char) * size);
-        while (src[i])
+        while (str[i])
         {
-                dest[i] = src[i];
+                dest[i] = str[i];
                 i++;
         }
         dest[i] = '\0';
