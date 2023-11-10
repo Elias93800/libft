@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 17:29:11 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/07 20:28:59 by emehdaou         ###   ########.fr       */
+/*   Created: 2023/11/10 01:08:13 by emehdaou          #+#    #+#             */
+/*   Updated: 2023/11/10 04:03:13 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+int	ft_isprint(int c)
 {
-	char *dest2;
-	char *src2;
-
-	src2 = (char *)src;
-	dest2 = (char *)dest;
-	while (n > 0)
-	{
-		*dest2 = *src2;
-		src2++;
-		dest2++;
-		n--;
-	}
-	return (dest);
+	return (c >= ' ' && c <= '~');
 }
