@@ -6,24 +6,24 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:33:10 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/10 03:31:37 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:41:38 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    int i;
-    int j;
-    char *res;
+	int		i;
+	int		j;
+	char	*res;
 
-    res = ft_calloc(1, ft_strlen(s1) + ft_strlen(s2) + 1);
-    if (!res)
-        return (NULL);
-    i = 0;
-    j = 0;
-   	while (s1[i])
+	res = ft_calloc(1, ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!res)
+		return (NULL);
+	i = 0;
+	j = 0;
+	while (s1[i])
 	{
 		res[j++] = s1[i++];
 	}
@@ -32,8 +32,8 @@ char *ft_strjoin(char const *s1, char const *s2)
 	{
 		res[j++] = s2[i++];
 	}
-    res[j] = '\0';
-    return res;
+	res[j] = '\0';
+	return (res);
 }
 // int main()
 // {

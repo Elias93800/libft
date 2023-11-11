@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:31:23 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/10 04:02:06 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:52:20 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *str)
 {
-	int i;
-	int size;
-	char *dest;
+	int		i;
+	int		size;
+	char	*dest;
 
 	i = 0;
 	size = ft_strlen(str) + 1;

@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:35:13 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/10 03:17:37 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:54:25 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	if (!little || !*little || len < 0)
 		return ((char *)big);

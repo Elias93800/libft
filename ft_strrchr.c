@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:35:17 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/10 01:39:42 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:41:56 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int			i;
+	int	i;
 
 	i = ft_strlen((char *)s);
 	while (i >= 0)

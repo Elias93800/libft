@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:33:19 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/09 18:28:40 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:53:22 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	dst[dest_size + i] = '\0';
 	return (src_size + dest_size);
-}	
+}

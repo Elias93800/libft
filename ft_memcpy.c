@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:29:11 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/07 20:28:59 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:51:12 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char *dest2;
-	char *src2;
+	char	*dest2;
+	char	*src2;
 
 	src2 = (char *)src;
 	dest2 = (char *)dest;

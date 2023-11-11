@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 23:57:50 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/10 03:44:08 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/11 04:07:10 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ char	*ft_itoa(int nb)
 		return (ft_strdup("-2147483648"));
 	nb = -(nb < 0) * (nb) + (nb > 0) * (nb);
 	res = malloc(sizeof(char) * count_num(nb) + sign + 1);
+	if (!res)
+		return (NULL);
 	while (nb >= 10)
 	{
 		res[i++] = nb % 10 + 48;

@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 17:31:17 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/11 03:41:30 by emehdaou         ###   ########.fr       */
+/*   Created: 2023/11/11 03:01:57 by emehdaou          #+#    #+#             */
+/*   Updated: 2023/11/11 04:11:45 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t			i;
-	unsigned char	*s1;
+	t_list	*head;
+	t_list	*tmp;
 
-	i = 0;
-	s1 = (unsigned char *)s;
-	while (i <= ft_strlen((char *)(s1)))
+	if (!lst || !f || !del)
+		return (NULL);
+	head = ft_lstnew((f)(lst->content));
+	lst = lst->next;
+	if (!head)
+		return (NULL);
+	while (lst)
 	{
-		if (s1[i] == (unsigned char)c)
-			return ((char *)s1 + i);
-		i++;
+		tmp = ft_lstnew((f)(lst->content));
+		if (!tmp)
+		{
+			ft_lstclear(&tmp, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&head, tmp);
+		lst = lst->next;
 	}
-	return (NULL);
+	return (head);
 }

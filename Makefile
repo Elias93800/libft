@@ -6,7 +6,7 @@
 #    By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/24 20:15:20 by apuchill          #+#    #+#              #
-#    Updated: 2023/11/10 01:21:42 by emehdaou         ###   ########.fr        #
+#    Updated: 2023/11/11 03:19:39 by emehdaou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,15 +47,15 @@ ft_memchr.c \
 ft_memcmp.c \
 ft_calloc.c \
 
-# BONUS		=	ft_lstnew.c \
-# ft_lstadd_front.c \
-# ft_lstsize.c \
-# ft_lstlast.c \
-# ft_lstadd_back.c \
-# ft_lstdelone.c \
-# ft_lstclear.c \
-# ft_lstiter.c \
-# ft_lstmap.c \
+BONUS		=	ft_lstnew.c \
+ft_lstadd_front.c \
+ft_lstsize.c \
+ft_lstlast.c \
+ft_lstadd_back.c \
+ft_lstdelone.c \
+ft_lstclear.c \
+ft_lstiter.c \
+ft_lstmap.c \
 
 OBJS		=	$(SRCS:.c=.o)
 
