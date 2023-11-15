@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 00:36:10 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/11 04:10:20 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/15 17:47:49 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*dest;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	dest = ft_calloc(sizeof(char), ft_strlen(s) + 1);
 	if (!dest)

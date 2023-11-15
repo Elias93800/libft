@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:33:10 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/11 03:41:38 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/15 17:26:45 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*res;
 
+	if (!s1 || !s2)
+		return (NULL);
 	res = ft_calloc(1, ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!res)
 		return (NULL);

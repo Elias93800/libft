@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:29:08 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/11 03:41:08 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/15 17:21:05 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	unsigned char	*str2;
 	size_t			i;
 
-	if (!s1 || !s2 || !n)
-		return (0);
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
 	i = 0;

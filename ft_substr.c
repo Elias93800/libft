@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:47:56 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/11 04:08:36 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/15 17:25:33 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t			i;
 	size_t			lens1;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	s1 = (unsigned char *)s;
 	lens1 = ft_strlen(s);

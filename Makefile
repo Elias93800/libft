@@ -6,7 +6,7 @@
 #    By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/24 20:15:20 by apuchill          #+#    #+#              #
-#    Updated: 2023/11/11 03:19:39 by emehdaou         ###   ########.fr        #
+#    Updated: 2023/11/15 17:10:34 by emehdaou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,3 +85,7 @@ fclean:		clean
 			@rm -f $(NAME)
 
 re:			fclean all
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS)
+	gcc -nostartfiles -shared -o libft.so $(OBJS) $(OBJS_BONUS)

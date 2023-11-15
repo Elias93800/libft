@@ -6,7 +6,7 @@
 /*   By: emehdaou <emehdaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 18:12:02 by emehdaou          #+#    #+#             */
-/*   Updated: 2023/11/10 04:01:21 by emehdaou         ###   ########.fr       */
+/*   Updated: 2023/11/15 19:10:03 by emehdaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	unsigned char	*str;
 	char			*var;
 
+	if (!s1)
+		return (NULL);
 	i = 0;
 	str = (unsigned char *)s1;
 	while (str[i] && ft_strchr(set, str[i]))
@@ -39,3 +41,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 // // 	char *s = ft_strtrim(ft_strdup("1231231321123"), "231");
 // 	printf("%s\n", s);
 // }
+//1231223123231avi12on12311231233 charset 123
